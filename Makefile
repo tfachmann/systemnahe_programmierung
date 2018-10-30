@@ -8,7 +8,7 @@ endif
 
 CC=avr-gcc
 OBJCOPY=avr-objcopy
-CFLAGS=-Os -DF_CPU=16000000UL -mmcu=${MCU} -Wall
+CFLAGS=-Os -DF_CPU=16000000UL -std=c11 -mmcu=${MCU} -Wall
 PORT=/dev/ttyACM0
 
 ${BIN}.hex: ${BIN}.elf
